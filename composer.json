@@ -15,7 +15,7 @@
     }
     ],
     "require": {
-        "qualwebs/glossary":"1.0.0"
+        
     },
     "autoload": {
         "files": [
