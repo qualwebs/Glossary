@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Qualwebs Glossary Grid Edit Layout
+ *
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Qualwebs\Glossary\Block\Adminhtml\Grid\Edit" name="glossary_grid_edit"/>
+        </referenceContainer>
+    </body>
+</page>

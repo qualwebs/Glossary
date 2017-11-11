@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Qualwebs Grid List Filter for frontend
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-right" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+    	<title>Glossary</title>
+	</head>
+    <body>
+    	<referenceContainer name="content">
+            <block class="Qualwebs\Glossary\Block\Navigation" name="glossary.navigation" template="Qualwebs_Glossary::view.phtml" />
+            <block class="Qualwebs\Glossary\Block\GlossaryFilter" name="glossary.filtered.list" template="Qualwebs_Glossary::glossary_letter.phtml" />
+        </referenceContainer>
+        <referenceContainer name="sidebar.main">
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation" before="-" template="Magento_Customer::account/navigation.phtml">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-account-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Account Dashboard</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-account-edit-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Account Information</argument>
+                        <argument name="path" xsi:type="string">customer/account/edit</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-address-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Address Book</argument>
+                        <argument name="path" xsi:type="string">customer/address</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="sidebar_links">
+                <arguments>
+                    <argument name="sidebar_links" xsi:type="string">sidebar_links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

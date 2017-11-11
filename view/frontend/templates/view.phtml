@@ -1,0 +1,33 @@
+<?php
+/**
+ * Qualwebs Grid Letter
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+?>
+<div class="row-fluid">
+    <div class="row-fluid account-title">
+        <img class="pull-left span4" src="<?php echo $block->getViewFileUrl('/images/account-header-img.png'); ?>">
+        <span class="span4">Glossary</span>
+        <img class="pull-left span4" src="<?php echo $block->getViewFileUrl('/images/account-header-img.png'); ?>">
+    </div>
+</div>
+<?php $letters = array();
+		$letters = range('A', 'Z');
+		array_unshift($letters, "123");	
+		$letters2 = $block->buildNavigation(); ?>
+<div class="padding20 accountblock">
+    <div class="row-fluid">
+		<div class="glossary_navigation">
+		<?php foreach ($letters as $_letter) : ?>
+			<?php if (in_array($_letter, $letters2)): ?>
+				<span><a href="<?php echo $block->getUrl('glossary')?>index/view/<?php echo $_letter; ?>" title="<?php echo 'All entries starting with ' .$_letter; ?>"><?php echo $_letter; ?> - </a></span>
+			<?php else : ?>
+				<span><?php echo $_letter; ?> - </span>
+			<?php endif; ?>
+		<?php endforeach; ?>
+		</div>
+		<hr/>
+	

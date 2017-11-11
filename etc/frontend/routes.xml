@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Qualwebs Glossary Routes for frontend
+ *
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Magento/Framework/Module/etc/module.xsd">
+    <router id="standard">
+        <route id="glossary" frontName="glossary">
+            <module name="Qualwebs_Glossary" />
+        </route>
+    </router>
+</config>

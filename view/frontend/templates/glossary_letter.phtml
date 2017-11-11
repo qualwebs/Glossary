@@ -1,0 +1,28 @@
+<?php
+/**
+ * Qualwebs Grid Filtered List
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+$collection = $block->getGlossary();
+
+foreach ($collection as $item) :?>
+	<div class="glossary_entry clearfix">
+        <span class="span2"><a title="View glossary entry" href="#"><?php echo $item['title']; ?></a></span>
+        <span class="span6"><?php echo $item['glossary_content']; ?></span>
+	</div>
+    <hr/>
+<?php endforeach; ?> 
+<?php if (count($collection) == 0): ?>
+	<div class="glossary_entry clearfix">
+        <span class="span8"><p><?php echo 'No glossary Found for this letter. Search <a href="' . $block->getURL('glossary'). '">Here</a>' ; ?></p></span>
+	</div>
+    <hr/>
+<?php endif; ?>
+<?php if ($block->getPagerHtml()): ?>
+            <div class="testimonials-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+        <?php endif ?>
+    </div><!--End of row fluid-->
+</div><!--End of padding20-->

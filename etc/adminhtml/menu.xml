@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Qualwebs Menu
+ *
+ * @category    Qualwebs
+ * @package     Qualwebs_Glossary
+ * @author      Qualwebs Solutions
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Qualwebs_Glossary::grid" title="Glossary Manager" module="Qualwebs_Glossary" sortOrder="20" parent="Magento_Backend::content_elements" action="glossary/grid" resource="Qualwebs_Glossary::grid"/>
+    </menu>
+</config>
