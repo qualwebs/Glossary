@@ -14,9 +14,6 @@
       "homepage": "https://www.qualwebs.com"
     }
     ],
-    "require": {
-        
-    },
     "autoload": {
         "files": [
             "registration.php"
