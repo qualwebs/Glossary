@@ -3,7 +3,7 @@
  * Qualwebs Glossary Block Glossary Filter
  * @category    Qualwebs
  * @package     Qualwebs_Glossary
- * @author      Qualwebs Solutions
+ * @author      Qualwebs
  */
 namespace Qualwebs\Glossary\Block;
 

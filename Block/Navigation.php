@@ -3,7 +3,7 @@
  * Qualwebs Glossary Block Glossary Letter Navigation
  * @category    Qualwebs
  * @package     Qualwebs_Glossary
- * @author      Qualwebs Solutions
+ * @author      Qualwebs
  *
  */
 
