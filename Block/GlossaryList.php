@@ -88,7 +88,7 @@ class GlossaryList extends \Magento\Framework\View\Element\Template implements
      */
     public function getIdentities()
     {
-        return [\Qualwebs\Glossary\Model\Glossary::CACHE_TAG . '_' . 'list'];
+        return [\Qualwebs\Glossary\Model\Grid::CACHE_TAG . '_' . 'list'];
     }
 
 }
